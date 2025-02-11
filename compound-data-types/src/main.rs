@@ -1,7 +1,7 @@
 fn main() {
     let numbers: [i32; 5] = [1, 2, 3, 4, 5];
     println!("Number Array: {:?}", numbers);
-    
+
     let fruits: [&str; 3] = ["pineapple", "pomegranate", "coconut"];
     println!("Fruits Array: {:?}", fruits);
     println!("Fruits Array 1st El: {}", fruits[0]);
@@ -16,14 +16,16 @@ fn main() {
     println!("My Mix Tuple: {:?}", mixed_tuple);
 
     //Slices: [1,2,3,4,5]
-    let number_slices: &[i32] = &[1,2,3,4,5];
+    let number_slices: &[i32] = &[1, 2, 3, 4, 5];
     println!("Number Slices: {:?}", number_slices);
 
     let animal_slices: &[&str] = &["Snake", "Frog", "Dog"];
     println!("Animal Slices: {:?}", animal_slices);
 
-    let book_slices: &[&String] = &[&"Teacher".to_string(), &"Hunger Games".to_string(), &"Harry Potter".to_string()];
+    let book_slices: &[&String] = &[
+        &"Teacher".to_string(),
+        &"Hunger Games".to_string(),
+        &"Harry Potter".to_string(),
+    ];
     println!("Book Slices: {:?}", book_slices);
-
 }
-
